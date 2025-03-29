@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime, timedelta
+from sklearn.model_selection import train_test_split, GridSearchCV
+
 
 # Load appointment data
 df = pd.read_csv("appointments.csv")  # Contains scheduled_time, actual_time, doctor_id, patient_id
